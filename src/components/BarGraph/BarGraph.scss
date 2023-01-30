@@ -1,0 +1,54 @@
+.barGraphWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .column {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0 20px;
+
+    &.frame {
+      border: solid 1px black;
+      min-height: 400px;
+    }
+
+    .label {
+      width: 50px;
+      text-align: center;
+    }
+  }
+
+  .chart {
+    justify-content: flex-end;
+    min-height: 6px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+
+    &.salmon {
+      background-color: #fa8072;
+    }
+
+    &.tomato {
+      background-color: #ff6347;
+    }
+
+    &.violet {
+      background-color: #ee82ee;
+    }
+
+    &.lightsteelblue {
+      background-color: #b0c4de;
+    }
+
+    &.lightblue {
+      background-color: #add8e6;
+    }
+
+    &.deepskyblue {
+      background-color: #01bfff;
+    }
+  }
+}
